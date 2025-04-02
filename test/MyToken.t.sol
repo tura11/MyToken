@@ -12,7 +12,8 @@ contract MyTokenTest is Test {
 
     address bob = makeAddr("bob");
     address alice = makeAddr("Alice");
-    function setUp() public{
+
+    function setUp() public {
         deployer = new DeployMyToken();
         myToken = deployer.run();
 
